@@ -319,10 +319,8 @@ public class CashierApp extends Application {
             double change = payment - total;
             changeLabel.setText("Change: " + formatPrice(change));
 
-            // Optionally, you can finalize the transaction here (e.g., print receipt)
             printReceipt();
 
-            // Clear cart after successful transaction (if needed)
             clearCart();
 
             paymentField.clear();
